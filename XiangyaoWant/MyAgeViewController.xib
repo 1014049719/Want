@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6221" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyAgeViewController">
+            <connections>
+                <outlet property="PickerView" destination="Vnd-Zm-SKo" id="4Kl-Gt-03M"/>
+                <outlet property="sexImageView" destination="s24-ZQ-Tmq" id="wSF-N1-2EF"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NSd-iZ-HlR">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+                    <color key="backgroundColor" red="0.15686274510000001" green="0.47843137250000001" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="我的资料" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UNS-LK-7oi">
+                    <rect key="frame" x="110" y="23" width="101" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9kU-BO-SsO">
+                    <rect key="frame" x="53" y="419" width="110" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="XxT-zy-XwX"/>
+                        <constraint firstAttribute="width" constant="110" id="q7p-lv-YNj"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="上一步1@x2_01.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="BackBtnClick:" destination="-1" eventType="touchUpInside" id="8Zn-ei-vqw"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eE9-9V-WB4">
+                    <rect key="frame" x="163" y="419" width="110" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="6Ug-HD-wfo"/>
+                        <constraint firstAttribute="width" constant="110" id="OM9-Q1-HTm"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="下一步1@x2_02.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="NextBtnClick:" destination="-1" eventType="touchUpInside" id="laE-Sc-xP1"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="你的年龄" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZA-yL-2O6">
+                    <rect key="frame" x="118" y="168" width="84" height="26"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                    <color key="textColor" red="0.1529411765" green="0.47843137250000001" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="请选择准确的个人信息" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqT-JC-C1g">
+                    <rect key="frame" x="75" y="195" width="170" height="21"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="岁" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y5Q-kc-vKF">
+                    <rect key="frame" x="179" y="295" width="17" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.041999315689999997" green="0.63985515510000002" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="25_03.png" translatesAutoresizingMaskIntoConstraints="NO" id="s24-ZQ-Tmq">
+                    <rect key="frame" x="123" y="73" width="75" height="75"/>
+                </imageView>
+                <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vnd-Zm-SKo">
+                    <rect key="frame" x="0.0" y="229" width="320" height="162"/>
+                </pickerView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="eE9-9V-WB4" secondAttribute="centerX" constant="-58" id="5df-Z9-EI0"/>
+                <constraint firstAttribute="centerX" secondItem="9kU-BO-SsO" secondAttribute="centerX" constant="52" id="CsX-tX-ogM"/>
+                <constraint firstAttribute="bottom" secondItem="9kU-BO-SsO" secondAttribute="bottom" constant="26" id="Ju4-pB-va8"/>
+                <constraint firstAttribute="bottom" secondItem="eE9-9V-WB4" secondAttribute="bottom" constant="26" id="vZG-Yt-xk7"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="25_03.png" width="250" height="312"/>
+        <image name="上一步1@x2_01.png" width="431" height="128"/>
+        <image name="下一步1@x2_02.png" width="454" height="128"/>
+    </resources>
+</document>
